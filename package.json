@@ -1,0 +1,24 @@
+{
+  "name": "programming-bootcamp",
+  "version": "1.0.0",
+  "description": "Learn to build web apps from zero to deployment",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "programming",
+    "bootcamp",
+    "learning",
+    "react",
+    "firebase",
+    "typescript"
+  ],
+  "author": "Anton Borodulin",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.5.0"
+  }
+}

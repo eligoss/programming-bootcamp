@@ -1,0 +1,145 @@
+/* Custom styles for Programming Bootcamp */
+
+:root {
+  --vp-c-brand-1: #646cff;
+  --vp-c-brand-2: #747bff;
+  --vp-c-brand-3: #8b92ff;
+  --vp-c-brand-soft: rgba(100, 108, 255, 0.14);
+}
+
+/* Callout boxes for important information */
+.tip-box {
+  background-color: var(--vp-c-brand-soft);
+  border-left: 4px solid var(--vp-c-brand-1);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.warning-box {
+  background-color: rgba(255, 197, 23, 0.14);
+  border-left: 4px solid #ffc517;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+.danger-box {
+  background-color: rgba(255, 76, 76, 0.14);
+  border-left: 4px solid #ff4c4c;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0 8px 8px 0;
+}
+
+/* Time and difficulty badges */
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-right: 0.5rem;
+}
+
+.badge-time {
+  background-color: var(--vp-c-brand-soft);
+  color: var(--vp-c-brand-1);
+}
+
+.badge-beginner {
+  background-color: rgba(66, 184, 131, 0.14);
+  color: #42b883;
+}
+
+/* Checklist styling */
+.checklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.checklist li::before {
+  content: '☐';
+  position: absolute;
+  left: 0;
+}
+
+/* Command/prompt boxes */
+.prompt-box {
+  background-color: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.prompt-box .prompt-label {
+  font-weight: 600;
+  color: var(--vp-c-brand-1);
+  margin-bottom: 0.5rem;
+}
+
+/* Print styles */
+@media print {
+  .VPNav,
+  .VPSidebar,
+  .VPFooter,
+  .VPLocalNav,
+  .aside,
+  .edit-link,
+  .prev-next {
+    display: none !important;
+  }
+
+  .VPContent {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .VPDoc {
+    padding: 0 !important;
+  }
+
+  .content-container {
+    max-width: 100% !important;
+  }
+
+  pre {
+    break-inside: avoid;
+    border: 1px solid #ddd !important;
+  }
+
+  h1, h2, h3 {
+    break-after: avoid;
+  }
+
+  table {
+    break-inside: avoid;
+  }
+
+  /* Print-friendly code blocks */
+  .vp-code-group {
+    break-inside: avoid;
+  }
+
+  /* Show link URLs in print */
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+    color: #666;
+  }
+}
+
+/* Mobile improvements */
+@media (max-width: 768px) {
+  .badge {
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+}
