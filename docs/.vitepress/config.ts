@@ -4,13 +4,49 @@ export default defineConfig({
   base: '/programming-bootcamp/',
   title: 'Programming Bootcamp',
   description: 'Learn to build web apps from zero to deployment',
+  lang: 'en-US',
+  lastUpdated: true,
+
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/programming-bootcamp/favicon.svg' }],
+    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['meta', { name: 'og:type', content: 'website' }],
+    ['meta', { name: 'og:locale', content: 'en' }],
+    ['meta', { name: 'og:title', content: 'Programming Bootcamp | Zero to Web App' }],
+    ['meta', { name: 'og:description', content: 'Learn to build real web applications with modern tools and AI assistance' }],
+    ['meta', { name: 'og:site_name', content: 'Programming Bootcamp' }],
+    ['meta', { name: 'og:image', content: 'https://eligoss.github.io/programming-bootcamp/og-image.svg' }]
+  ],
+
+  sitemap: {
+    hostname: 'https://eligoss.github.io/programming-bootcamp/'
+  },
+
+  markdown: {
+    lineNumbers: true,
+    theme: {
+      light: 'github-light',
+      dark: 'github-dark'
+    }
+  },
 
   themeConfig: {
+    logo: '/logo.svg',
+
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Start', link: '/phase-0-learning-contract/' },
       { text: 'Reference', link: '/reference/terminal-cheatsheet' }
     ],
+
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/eligoss/programming-bootcamp' }
+    ],
+
+    editLink: {
+      pattern: 'https://github.com/eligoss/programming-bootcamp/edit/main/docs/:path',
+      text: 'Edit this page on GitHub'
+    },
 
     sidebar: [
       {
@@ -197,7 +233,14 @@ export default defineConfig({
     },
 
     footer: {
-      message: 'Built for learning'
-    }
+      message: 'Built for learning | Open source on GitHub',
+      copyright: 'MIT Licensed'
+    },
+
+    returnToTopLabel: 'Return to top',
+    sidebarMenuLabel: 'Menu',
+    darkModeSwitchLabel: 'Appearance',
+    lightModeSwitchTitle: 'Switch to light mode',
+    darkModeSwitchTitle: 'Switch to dark mode'
   }
 })

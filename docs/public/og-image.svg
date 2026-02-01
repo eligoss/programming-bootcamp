@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a1a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2d2d2d;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- Grid pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#3eaf7c" stroke-width="0.5" opacity="0.1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Main title -->
+  <text x="600" y="250" font-family="sans-serif" font-size="72" font-weight="bold" text-anchor="middle" fill="#3eaf7c">
+    Programming Bootcamp
+  </text>
+
+  <!-- Subtitle -->
+  <text x="600" y="320" font-family="sans-serif" font-size="36" text-anchor="middle" fill="#ffffff">
+    From Zero to Web App
+  </text>
+
+  <!-- Code brackets decoration -->
+  <text x="200" y="400" font-family="monospace" font-size="120" fill="#3eaf7c" opacity="0.3">&lt;</text>
+  <text x="950" y="400" font-family="monospace" font-size="120" fill="#3eaf7c" opacity="0.3">/&gt;</text>
+
+  <!-- Tech stack badges -->
+  <g transform="translate(350, 450)">
+    <rect width="120" height="40" rx="20" fill="#3eaf7c"/>
+    <text x="60" y="27" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">React</text>
+  </g>
+
+  <g transform="translate(490, 450)">
+    <rect width="140" height="40" rx="20" fill="#3178c6"/>
+    <text x="70" y="27" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">TypeScript</text>
+  </g>
+
+  <g transform="translate(650, 450)">
+    <rect width="130" height="40" rx="20" fill="#ffca28"/>
+    <text x="65" y="27" font-family="sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Firebase</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="600" y="580" font-family="sans-serif" font-size="24" text-anchor="middle" fill="#888888">
+    Learn with AI • Build Real Apps • 4-5 Hours
+  </text>
+</svg>
