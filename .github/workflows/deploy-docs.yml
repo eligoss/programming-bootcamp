@@ -2,9 +2,10 @@ name: Deploy Documentation
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
   pull_request:
-    branches: [main]
+    # Build on PRs from any branch
   workflow_dispatch:
 
 permissions:
@@ -18,6 +19,7 @@ concurrency:
 
 jobs:
   build:
+    name: Build Documentation
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -46,6 +48,8 @@ jobs:
           path: docs/.vitepress/dist
 
   deploy:
+    name: Deploy to GitHub Pages
+    # Only deploy on push to main branch (not on PRs)
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     environment:
       name: github-pages
