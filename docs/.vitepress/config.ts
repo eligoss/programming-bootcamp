@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: '/programming-bootcamp/',
   title: 'Programming Bootcamp',
   description: 'Learn to build web apps from zero to deployment',
 
