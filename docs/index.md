@@ -28,6 +28,10 @@ features:
     details: In 4-5 hours, go from zero to deploying your first real web application to the internet.
 ---
 
+::: tip Good Morning, **RASANDRE**! 🌅
+I hope you slept well! Today we have a lot to cover, but don't worry — I've built this guide to be your backbone throughout our session. You can start reading through it while you're commuting, and we'll work through everything together step by step. Ready for an exciting day of learning?
+:::
+
 # Welcome to the Programming Bootcamp
 
 This guide is designed for **complete beginners** — no prior programming experience required.

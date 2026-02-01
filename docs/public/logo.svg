@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3eaf7c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2e8b57;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Bracket representing code -->
+  <path d="M 30 20 L 20 20 L 20 80 L 30 80" stroke="url(#grad)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M 70 20 L 80 20 L 80 80 L 70 80" stroke="url(#grad)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <!-- Lightning bolt representing speed/learning -->
+  <path d="M 55 25 L 40 50 L 50 50 L 45 75 L 60 50 L 50 50 Z" fill="url(#grad)"/>
+</svg>
