@@ -171,7 +171,7 @@ Before committing, make sure you understand what you built:
 >
 > 1. **What is React Router and why do we use it?**
 > 2. **What do BrowserRouter, Routes, and Route do?**
-> 3. **Why do we use Link instead of <a> tags?**
+> 3. **Why do we use Link instead of `<a>` tags?**
 > 4. **What does the Layout component do?**
 > 5. **How does the children prop work?**
 > 6. **Why did we create separate page files?**

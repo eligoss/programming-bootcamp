@@ -180,10 +180,10 @@ touch firestore.rules
 
 **Fix:**
 ```json
-// ❌ Wrong
+// WRONG
 "public": ["dist"]
 
-// ✅ Correct
+// CORRECT
 "public": "dist"
 ```
 

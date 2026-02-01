@@ -367,10 +367,10 @@ If you have access to a screen reader:
 **Fix:** Use semantic elements (`<button>`, `<a>`, `<input>`), not `<div>` with `onClick`.
 
 ```tsx
-// ❌ Not accessible
+// NOT accessible
 <div onClick={handleClick}>Click me</div>
 
-// ✅ Accessible
+// ACCESSIBLE
 <button onClick={handleClick}>Click me</button>
 ```
 

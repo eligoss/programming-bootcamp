@@ -41,7 +41,7 @@ Requirements:
 - Each link should have readable text
 
 After creating it, explain:
-1. Why we use Link instead of <a>
+1. Why we use Link instead of `<a>`
 2. How the "to" prop works
 3. Where we'll use this component
 ```

@@ -11,13 +11,13 @@ Clean, professional styling for the app skeleton. Nothing fancy — just making 
 > **💡 Ask AI to Explain:**
 >
 > ```
-> What's the difference between inline styles (style={{ }}) and CSS files?
+> What's the difference between inline styles (style=\{\{ \}\}) and CSS files?
 > What are CSS variables and why are they useful?
 > Where should global styles go in a React app?
 > ```
 
 **What you should learn:**
-- Inline styles = `style={{ color: 'red' }}` (JavaScript object)
+- Inline styles = `style=\{\{ color: 'red' \}\}` (JavaScript object)
 - CSS files = traditional `.css` files imported into components
 - CSS variables = reusable values defined once, used everywhere
 - Global styles typically go in `src/index.css`

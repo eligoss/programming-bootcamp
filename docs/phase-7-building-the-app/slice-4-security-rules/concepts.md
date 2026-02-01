@@ -578,7 +578,7 @@ service cloud.firestore {
 // Attacker tries to query all todos
 const q = query(collection(db, 'todos'));
 const docs = await getDocs(q);
-// ❌ Firestore returns only attacker's todos, not others'
+// BLOCKED: Firestore returns only attacker's todos, not others'
 ```
 
 **Attack 2: Create todo for another user**
@@ -589,21 +589,21 @@ await addDoc(collection(db, 'todos'), {
   completed: false,
   createdAt: Timestamp.now()
 });
-// ❌ Denied: userId must match request.auth.uid
+// DENIED: userId must match request.auth.uid
 ```
 
 **Attack 3: Modify someone else's todo**
 ```javascript
 const todoRef = doc(db, 'todos', 'victim-todo-id');
 await updateDoc(todoRef, { completed: true });
-// ❌ Denied: resource.data.userId doesn't match request.auth.uid
+// DENIED: resource.data.userId doesn't match request.auth.uid
 ```
 
 **Attack 4: Delete someone else's todo**
 ```javascript
 const todoRef = doc(db, 'todos', 'victim-todo-id');
 await deleteDoc(todoRef);
-// ❌ Denied: resource.data.userId doesn't match request.auth.uid
+// DENIED: resource.data.userId doesn't match request.auth.uid
 ```
 
 **Attack 5: Create invalid data**
@@ -613,7 +613,7 @@ await addDoc(collection(db, 'todos'), {
   completed: 'yes',  // String instead of boolean
   userId: currentUser.uid
 });
-// ❌ Denied: title.size() must be > 0, completed must be bool
+// DENIED: title.size() must be > 0, completed must be bool
 ```
 
 ### Visual Diagram: Security Flow

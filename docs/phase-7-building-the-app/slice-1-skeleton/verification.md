@@ -181,10 +181,10 @@ In `Layout.tsx`, should render:
 Page files should NOT import Navigation directly:
 
 ```typescript
-// ❌ Bad
+// Bad - don't do this
 import Navigation from '../components/Layout/Navigation';
 
-// ✅ Good - just the page content
+// Good - just the page content
 export default function HomePage() {
   return (
     <div>
@@ -233,9 +233,9 @@ npm run lint
 - [ ] No warnings (or only minor warnings you can ignore)
 
 **Common linting errors to fix:**
-- Unused imports → remove them
-- Missing semicolons → add them
-- `any` types → replace with specific types
+- Unused imports -> remove them
+- Missing semicolons -> add them
+- `any` types -> replace with specific types
 
 ---
 
@@ -273,7 +273,7 @@ Before moving on, make sure you can answer these:
 
 - [ ] **What is React Router?** (Library for client-side routing in SPAs)
 - [ ] **What does BrowserRouter do?** (Provides routing context to the app)
-- [ ] **Why use Link instead of <a>?** (Prevents page reload, keeps app state)
+- [ ] **Why use Link instead of `<a>`?** (Prevents page reload, keeps app state)
 - [ ] **What is the children prop?** (Content passed between opening and closing tags)
 - [ ] **Why create a Layout component?** (Avoid repeating Navigation on every page)
 - [ ] **What is component composition?** (Building UIs by nesting components)
@@ -397,6 +397,6 @@ If all checks pass, you're ready to move on!
 
 **Next slice:**
 
-[Slice 2: Authentication →](../../slice-2-authentication/)
+[Slice 2: Authentication ->](../../slice-2-authentication/)
 
 In Slice 2, you'll add Firebase Authentication so users can sign up, log in, and log out.

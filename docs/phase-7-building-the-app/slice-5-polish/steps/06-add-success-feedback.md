@@ -74,7 +74,7 @@ function CreateTodoPage() {
         userId: currentUser.uid,
         createdAt: Timestamp.now()
       });
-      showToast('Todo created!', 'success');  // ✅ Show success toast
+      showToast('Todo created!', 'success');  // SUCCESS: Show success toast
       router.push('/todos');
     } catch (error) {
       console.error('Failed to create todo:', error);
@@ -112,7 +112,7 @@ function EditTodoPage() {
         title,
         completed
       });
-      showToast('Changes saved!', 'success');  // ✅ Show success toast
+      showToast('Changes saved!', 'success');  // SUCCESS: Show success toast
       router.push('/todos');
     } catch (error) {
       console.error('Failed to update todo:', error);
@@ -151,7 +151,7 @@ function TodosPage() {
     if (confirm('Delete this todo?')) {
       try {
         await deleteDoc(doc(db, 'todos', todoId));
-        showToast('Todo deleted!', 'success');  // ✅ Show success toast
+        showToast('Todo deleted!', 'success');  // SUCCESS: Show success toast
         // Refresh list (re-fetch or filter state)
       } catch (error) {
         console.error('Failed to delete todo:', error);
@@ -249,9 +249,9 @@ async function handleToggleComplete(todoId: string, currentStatus: boolean) {
 
 **Fix:** Check the message in `showToast()`:
 ```tsx
-showToast('Todo created!', 'success');  // ✅ Correct
-showToast('Changes saved!', 'success'); // ✅ For update
-showToast('Todo deleted!', 'success');  // ✅ For delete
+showToast('Todo created!', 'success');  // SUCCESS: Correct
+showToast('Changes saved!', 'success'); // SUCCESS: For update
+showToast('Todo deleted!', 'success');  // SUCCESS: For delete
 ```
 
 ### Toast Shows After Redirect

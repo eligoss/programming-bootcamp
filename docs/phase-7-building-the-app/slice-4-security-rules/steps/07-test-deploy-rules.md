@@ -386,13 +386,13 @@ await addDoc(collection(db, 'todos'), {
 
 **Fix:** Check your update code doesn't include:
 ```typescript
-// ❌ Don't update these
+// DON'T update these
 await updateDoc(todoRef, {
   userId: 'something',      // Immutable!
   createdAt: Timestamp.now() // Immutable!
 });
 
-// ✅ Only update mutable fields
+// CORRECT: Only update mutable fields
 await updateDoc(todoRef, {
   title,
   description,

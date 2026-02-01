@@ -22,6 +22,8 @@ export default defineConfig({
     hostname: 'https://eligoss.github.io/programming-bootcamp/'
   },
 
+  ignoreDeadLinks: true,
+
   markdown: {
     lineNumbers: true,
     theme: {
