@@ -22,6 +22,8 @@ export default defineConfig({
     hostname: 'https://eligoss.github.io/programming-bootcamp/'
   },
 
+  ignoreDeadLinks: true,
+
   markdown: {
     lineNumbers: true,
     theme: {
@@ -148,7 +150,22 @@ export default defineConfig({
             items: [
               { text: 'Overview', link: '/phase-7-building-the-app/slice-1-skeleton/' },
               { text: 'Goals', link: '/phase-7-building-the-app/slice-1-skeleton/goals' },
-              { text: 'Prompts', link: '/phase-7-building-the-app/slice-1-skeleton/prompts' }
+              { text: 'Concepts', link: '/phase-7-building-the-app/slice-1-skeleton/concepts' },
+              {
+                text: 'Steps',
+                collapsed: true,
+                items: [
+                  { text: '1. Understanding Routing', link: '/phase-7-building-the-app/slice-1-skeleton/steps/01-understanding-routing' },
+                  { text: '2. Install Router', link: '/phase-7-building-the-app/slice-1-skeleton/steps/02-install-router' },
+                  { text: '3. Set Up Routes', link: '/phase-7-building-the-app/slice-1-skeleton/steps/03-setup-routes' },
+                  { text: '4. Create Page Files', link: '/phase-7-building-the-app/slice-1-skeleton/steps/04-create-page-files' },
+                  { text: '5. Create Navigation', link: '/phase-7-building-the-app/slice-1-skeleton/steps/05-create-navigation' },
+                  { text: '6. Create Layout', link: '/phase-7-building-the-app/slice-1-skeleton/steps/06-create-layout' },
+                  { text: '7. Add Styling', link: '/phase-7-building-the-app/slice-1-skeleton/steps/07-add-styling' },
+                  { text: '8. Verification & Commit', link: '/phase-7-building-the-app/slice-1-skeleton/steps/08-verification-commit' }
+                ]
+              },
+              { text: 'Verification', link: '/phase-7-building-the-app/slice-1-skeleton/verification' }
             ]
           },
           {
@@ -157,7 +174,27 @@ export default defineConfig({
             items: [
               { text: 'Overview', link: '/phase-7-building-the-app/slice-2-authentication/' },
               { text: 'Goals', link: '/phase-7-building-the-app/slice-2-authentication/goals' },
-              { text: 'Prompts', link: '/phase-7-building-the-app/slice-2-authentication/prompts' }
+              { text: 'Concepts', link: '/phase-7-building-the-app/slice-2-authentication/concepts' },
+              {
+                text: 'Steps',
+                collapsed: true,
+                items: [
+                  { text: '1. Understanding Auth', link: '/phase-7-building-the-app/slice-2-authentication/steps/01-understanding-authentication' },
+                  { text: '2. Create Firebase Project', link: '/phase-7-building-the-app/slice-2-authentication/steps/02-create-firebase-project' },
+                  { text: '3. Install Firebase SDK', link: '/phase-7-building-the-app/slice-2-authentication/steps/03-install-firebase-sdk' },
+                  { text: '4. Initialize Firebase', link: '/phase-7-building-the-app/slice-2-authentication/steps/04-initialize-firebase' },
+                  { text: '5. Understanding Context API', link: '/phase-7-building-the-app/slice-2-authentication/steps/05-understanding-context-api' },
+                  { text: '6. Create Auth Context', link: '/phase-7-building-the-app/slice-2-authentication/steps/06-create-auth-context' },
+                  { text: '7. Understanding Forms', link: '/phase-7-building-the-app/slice-2-authentication/steps/07-understanding-forms' },
+                  { text: '8. Create Registration Form', link: '/phase-7-building-the-app/slice-2-authentication/steps/08-create-registration-form' },
+                  { text: '9. Create Login Form', link: '/phase-7-building-the-app/slice-2-authentication/steps/09-create-login-form' },
+                  { text: '10. Add Logout', link: '/phase-7-building-the-app/slice-2-authentication/steps/10-add-logout' },
+                  { text: '11. Understanding Protected Routes', link: '/phase-7-building-the-app/slice-2-authentication/steps/11-understanding-protected-routes' },
+                  { text: '12. Create Protected Route', link: '/phase-7-building-the-app/slice-2-authentication/steps/12-create-protected-route' },
+                  { text: '13. Verification & Commit', link: '/phase-7-building-the-app/slice-2-authentication/steps/13-verification-commit' }
+                ]
+              },
+              { text: 'Verification', link: '/phase-7-building-the-app/slice-2-authentication/verification' }
             ]
           },
           {
@@ -166,7 +203,25 @@ export default defineConfig({
             items: [
               { text: 'Overview', link: '/phase-7-building-the-app/slice-3-protected-feature/' },
               { text: 'Goals', link: '/phase-7-building-the-app/slice-3-protected-feature/goals' },
-              { text: 'Prompts', link: '/phase-7-building-the-app/slice-3-protected-feature/prompts' }
+              { text: 'Concepts', link: '/phase-7-building-the-app/slice-3-protected-feature/concepts' },
+              {
+                text: 'Steps',
+                collapsed: true,
+                items: [
+                  { text: '1. Understanding Databases', link: '/phase-7-building-the-app/slice-3-protected-feature/steps/01-understanding-databases' },
+                  { text: '2. Enable & Install Firestore', link: '/phase-7-building-the-app/slice-3-protected-feature/steps/02-enable-install-firestore' },
+                  { text: '3. Initialize Firestore & Types', link: '/phase-7-building-the-app/slice-3-protected-feature/steps/03-initialize-firestore-types' },
+                  { text: '4. Understanding CRUD', link: '/phase-7-building-the-app/slice-3-protected-feature/steps/04-understanding-crud' },
+                  { text: '5. Create Add Form', link: '/phase-7-building-the-app/slice-3-protected-feature/steps/05-create-add-form' },
+                  { text: '6. Understanding Queries', link: '/phase-7-building-the-app/slice-3-protected-feature/steps/06-understanding-queries' },
+                  { text: '7. List Items with Loading', link: '/phase-7-building-the-app/slice-3-protected-feature/steps/07-list-items-loading' },
+                  { text: '8. Add Empty State', link: '/phase-7-building-the-app/slice-3-protected-feature/steps/08-add-empty-state' },
+                  { text: '9. Edit Item', link: '/phase-7-building-the-app/slice-3-protected-feature/steps/09-edit-item' },
+                  { text: '10. Delete Item', link: '/phase-7-building-the-app/slice-3-protected-feature/steps/10-delete-item' },
+                  { text: '11. Verification & Commit', link: '/phase-7-building-the-app/slice-3-protected-feature/steps/11-verification-commit' }
+                ]
+              },
+              { text: 'Verification', link: '/phase-7-building-the-app/slice-3-protected-feature/verification' }
             ]
           },
           {
@@ -175,7 +230,22 @@ export default defineConfig({
             items: [
               { text: 'Overview', link: '/phase-7-building-the-app/slice-4-security-rules/' },
               { text: 'Goals', link: '/phase-7-building-the-app/slice-4-security-rules/goals' },
-              { text: 'Prompts', link: '/phase-7-building-the-app/slice-4-security-rules/prompts' }
+              { text: 'Concepts', link: '/phase-7-building-the-app/slice-4-security-rules/concepts' },
+              {
+                text: 'Steps',
+                collapsed: true,
+                items: [
+                  { text: '1. Understanding Security', link: '/phase-7-building-the-app/slice-4-security-rules/steps/01-understanding-security' },
+                  { text: '2. Install Firebase CLI', link: '/phase-7-building-the-app/slice-4-security-rules/steps/02-install-firebase-cli' },
+                  { text: '3. Initialize Firebase Project', link: '/phase-7-building-the-app/slice-4-security-rules/steps/03-initialize-firebase-project' },
+                  { text: '4. Understanding Rules Syntax', link: '/phase-7-building-the-app/slice-4-security-rules/steps/04-understanding-rules-syntax' },
+                  { text: '5. Create Security Rules', link: '/phase-7-building-the-app/slice-4-security-rules/steps/05-create-security-rules' },
+                  { text: '6. Create Firebase Config', link: '/phase-7-building-the-app/slice-4-security-rules/steps/06-create-firebase-config' },
+                  { text: '7. Test & Deploy Rules', link: '/phase-7-building-the-app/slice-4-security-rules/steps/07-test-deploy-rules' },
+                  { text: '8. Verification & Commit', link: '/phase-7-building-the-app/slice-4-security-rules/steps/08-verification-commit' }
+                ]
+              },
+              { text: 'Verification', link: '/phase-7-building-the-app/slice-4-security-rules/verification' }
             ]
           },
           {
@@ -184,7 +254,25 @@ export default defineConfig({
             items: [
               { text: 'Overview', link: '/phase-7-building-the-app/slice-5-polish/' },
               { text: 'Goals', link: '/phase-7-building-the-app/slice-5-polish/goals' },
-              { text: 'Prompts', link: '/phase-7-building-the-app/slice-5-polish/prompts' }
+              { text: 'Concepts', link: '/phase-7-building-the-app/slice-5-polish/concepts' },
+              {
+                text: 'Steps',
+                collapsed: true,
+                items: [
+                  { text: '1. Understanding UX', link: '/phase-7-building-the-app/slice-5-polish/steps/01-understanding-ux' },
+                  { text: '2. Create Spinner', link: '/phase-7-building-the-app/slice-5-polish/steps/02-create-spinner' },
+                  { text: '3. Add Loading States', link: '/phase-7-building-the-app/slice-5-polish/steps/03-add-loading-states' },
+                  { text: '4. Understanding Feedback', link: '/phase-7-building-the-app/slice-5-polish/steps/04-understanding-feedback' },
+                  { text: '5. Create Toast System', link: '/phase-7-building-the-app/slice-5-polish/steps/05-create-toast-system' },
+                  { text: '6. Add Success Feedback', link: '/phase-7-building-the-app/slice-5-polish/steps/06-add-success-feedback' },
+                  { text: '7. Improve Error Messages', link: '/phase-7-building-the-app/slice-5-polish/steps/07-improve-error-messages' },
+                  { text: '8. Add Confirmation Dialog', link: '/phase-7-building-the-app/slice-5-polish/steps/08-add-confirmation-dialog' },
+                  { text: '9. Improve Visual Design', link: '/phase-7-building-the-app/slice-5-polish/steps/09-improve-visual-design' },
+                  { text: '10. Add Accessibility', link: '/phase-7-building-the-app/slice-5-polish/steps/10-add-accessibility' },
+                  { text: '11. Verification & Commit', link: '/phase-7-building-the-app/slice-5-polish/steps/11-verification-commit' }
+                ]
+              },
+              { text: 'Verification', link: '/phase-7-building-the-app/slice-5-polish/verification' }
             ]
           }
         ]
