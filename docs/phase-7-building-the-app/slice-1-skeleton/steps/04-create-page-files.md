@@ -234,4 +234,4 @@ At this point you should understand:
 
 Pages exist, but there's no way to navigate between them without manually typing URLs. Let's add navigation:
 
-[Step 5: Create Navigation Component →](./05-create-navigation)
+[Step 5: Create Navigation Component →](./05-create-navigation.md)

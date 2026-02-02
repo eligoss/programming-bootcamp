@@ -8,7 +8,7 @@ This is your final quality check. Work through each section carefully. If anythi
 
 If you find issues, these steps can help:
 - [Step 3: Setup Routes](./steps/03-setup-routes) — Route configuration
-- [Step 5: Create Navigation](./steps/05-create-navigation) — Navigation component
+- [Step 5: Create Navigation](./steps/05-create-navigation.md) — Navigation component
 - [Step 6: Create Layout](./steps/06-create-layout) — Layout structure
 - [Step 7: Add Styling](./steps/07-add-styling) — CSS styling
 

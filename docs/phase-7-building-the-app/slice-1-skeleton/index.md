@@ -40,7 +40,7 @@ This slice is broken into **small, interactive steps**. Each step:
    - [Step 2: Install React Router](./steps/02-install-router) — Add the routing library to your project
    - [Step 3: Set Up Routes](./steps/03-setup-routes) — Configure BrowserRouter and create basic routes
    - [Step 4: Create Page Files](./steps/04-create-page-files) — Organize pages into separate files
-   - [Step 5: Create Navigation](./steps/05-create-navigation) — Build a navigation component with links
+   - [Step 5: Create Navigation](./steps/05-create-navigation.md) — Build a navigation component with links
    - [Step 6: Create Layout](./steps/06-create-layout) — Use component composition and the children prop
    - [Step 7: Add Styling](./steps/07-add-styling) — Apply professional CSS styling
    - [Step 8: Verification & Commit](./steps/08-verification-commit) — Test everything and commit your work
